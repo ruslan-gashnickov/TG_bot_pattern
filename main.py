@@ -8,6 +8,9 @@ from config import config
 from utils.logger import logger
 from handiers import common
 async def main():
+# Инициализация базы данных
+    init_db()
+    logger.info("Database initialized")
 # Инициализация бота и диспетчера - исправленная версия
     bot = Bot(
         token=config.BOT_TOKEN,
