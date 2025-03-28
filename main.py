@@ -17,6 +17,8 @@ async def main():
 
 
     dp.include_router(common.router)
+
+    logger.info("Starting bot...")
     await dp.start_polling(bot)
 
 
